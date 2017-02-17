@@ -1,0 +1,36 @@
+        <div class="columnshoe">
+
+
+
+
+            <div class="shoeinfo" *ngFor="let shoeinfo of shoes">
+                
+                <div class="aboveshoebox">
+                </div>
+
+                  <div class="randombox"> </div>  
+                  <a routerLink="/detailpage" routerLinkActive="active">
+                <img [src]="shoeinfo.image" [alt]="shoeinfo.title" height="190" width="100%">
+                </a>
+
+                <div class="shoedetails">
+                    <h3> {{shoeinfo.title | uppercase }} </h3>
+                    <h4> {{shoeinfo.subtitle | uppercase }} </h4>
+                    <div class="shoetext">
+                         {{shoeinfo.description}} 
+                    </div>
+                </div>
+                <div class="valuta">
+                    <div class="valutaleft">
+                       $ {{shoeinfo.price}} 
+                    </div>
+                    <div class="valutaright">
+                        <img src="Heart.svg" alt="heart" height="20" width="40%">
+                        <img src="Plus.svg" alt="plus" height="20" width="40%">
+                    </div>
+                </div>
+                <input type="button" class="button" value="BUY NOW">
+            </div>
+
+
+        </div>

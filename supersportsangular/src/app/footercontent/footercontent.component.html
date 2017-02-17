@@ -1,0 +1,147 @@
+
+<footer>
+
+
+
+    <section class="sectionfour">
+<div class="redsection">
+
+    <div class="redsectionleft">
+        <div class="redsectiontext">
+            <header>
+             SIGN UP FOR EXCLUSIVE SALVES AND PRODUCT NEWS
+            </header>
+        </div>
+    </div>
+
+    <div class="redsectionright"> 
+       <input type="text" class="footerinput" id="email" name="email" value="LOREM@IPSUM.COM">
+       <input type="button" class="signupbutton" value="SIGN UP">
+    </div>
+
+</div>
+</section>
+
+
+
+
+    <div class="footerbox">
+
+        <div class="footerinfo"> 
+            <div class="firstbox">
+                <div class="footertitle">
+                <header>
+                OUR STORES
+                </header>
+                </div>
+                <div class="footertext">
+                    Feel free to visit our stores or contact us <br>
+                    <br> 
+                    Vinegade 109 <br>
+                    5000 Odense <br>
+                    99886622 <br>
+                    <br>
+                    Vestergade 910 <br>
+                    9000 Aalborg <br>
+                    99886622
+                </div>
+                <div class="socialmedia">
+                     <a href=""> <img src="social.png" alt="socialmedia" height="21" width="50%"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footerinfo"> 
+
+            <div class="secondbox">
+
+                <div class="footertitle">
+                    <header>
+                     BLOG POSTS
+                    </header>
+                </div>
+                    <div class="footertext">
+                    <div class="footersubtitles">
+                    <strong> Feel free to visit our stores or contact us</strong><br>
+                    </div>
+                    Lorem ipsum dolor sit amet, ius nobis ridens et, vis id nihil vocent interpretaris. <br> 
+                   <br>
+                   <div class="footersubtitles">
+                   <strong> Feel free to visit our stores or contact us</strong><br>
+                   </div>
+                    Lorem ipsum dolor sit amet, ius nobis ridens et, vis id nihil vocent interpretaris. <br> 
+                   <br>
+                   <div class="footersubtitles">
+                    <strong> Feel free to visit our stores or contact us</strong><br>
+                   </div>
+                    Lorem ipsum dolor sit amet, ius nobis ridens et, vis id nihil vocent interpretaris. <br> 
+                   <br>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footerinfo"> 
+            <div class="thirdandforthbox">
+
+                <div class="thirdbox">
+                <div class="footertitle">
+                    <header>
+                     SUPPORT
+                    </header>
+                </div>
+
+                <div class="footertext">
+                    <a href="">Terms & Conditions </a> <br> <a href="">FAQr</a> <br> <a href="">PAYMENT</a> <br> <a href="">Refunds</a> <br><a href="">Track Order</a> <br><a href=""> Services</a> <br> <a href="">Privacy & Security</a> <br> <a href="">Careers</a>
+                    <br> <a href="">Press</a> <br> <a routerLink="/contactpage" routerLinkActive="active"> Contact </a>
+                </div>
+
+                </div>
+                <div class="forthbox">
+                    <div class="footertext">
+                    <a href="">Sizing</a> <br><a href=""> Ordering</a> <br> <a href="">Shipping </a> <br> <a href="">Return Policy</a> <br><a href="">Affiliates</a>  <br><a href="">Find A Store</a> <br> <a href="">Site Map</a> <br> <a href="">Sign Up & Save</a>
+                    </div>
+                </div>
+        </div>
+
+        </div>
+   </div> 
+<script> 
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</footer>
